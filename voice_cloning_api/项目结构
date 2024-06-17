@@ -1,0 +1,20 @@
+voice_cloning_api/
+├── app.py                 # 主程序入口
+├── train/                 # 模型训练相关代码
+│   ├── __init__.py
+│   ├── trainer.py        # 模型训练器
+│   └── queue_manager.py  # 任务队列管理
+├── voice_clone/           # 音频模型应用相关代码
+│   ├── __init__.py
+│   ├── cloner.py         # 音频克隆器
+│   └── queue_manager.py  # 任务队列管理
+├── audio_transform/       # 音频变声相关代码
+│   ├── __init__.py
+│   ├── transformer.py    # 音频变声器
+│   └── queue_manager.py  # 任务队列管理
+├── utils/                 # 工具函数
+│   ├── __init__.py
+│   ├── audio.py          # 音频处理
+│   └── http_client.py    # 检测客户端请求
+├── models/                # 存放训练好的模型
+└── requirements.txt       # 项目依赖
